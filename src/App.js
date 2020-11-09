@@ -8,6 +8,8 @@ import { DataStore, Predicates } from "@aws-amplify/datastore";
 import { Post, PostStatus } from "./models";
 
 import awsConfig from "./aws-exports";
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+
 Amplify.configure(awsConfig);
 
 function onCreate() {
@@ -65,6 +67,9 @@ function App() {
 
   return (
     <div className="App">
+        {/*  <div>
+            <AmplifySignOut />
+        </div>*/}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       <div>
@@ -90,3 +95,5 @@ function App() {
 }
 
 export default App;
+//export default withAuthenticator(App);
+

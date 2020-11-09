@@ -5,6 +5,7 @@
     "dependencies": {
         "@aws-amplify/core": "^3.5.4",
         "@aws-amplify/datastore": "^2.0.9",
+        "@aws-amplify/ui-react": "^0.2.21",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-scripts": "3.2.0"
