@@ -15,6 +15,7 @@ npm i -g @aws-amplify/cli
 ```sh
     aws codecommit create-repository --repository-name amplify-datastore-js-e2e
     git clone --bare git@github.com:pankajagrawal16/amplify-datastore-js-e2e.git
+    cd amplify-datastore-js-e2e.git/
     git push --mirror codecommit://amplify-datastore-js-e2e
     cd ..
     rm -rf amplify-datastore-js-e2e.git/
